@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+	<div class="clock">
+		<div class="dot"></div>
+		<div class="seconds"></div>
+	</div>
+</div>
+<script>
+	let deg = 90;
+	setInterval(function seconds() {
+		document.querySelector('.seconds').style.transform = "rotate(" + deg+"deg)";
+deg+=6;
+	},1000);
+</script>
+</body>
+</html>
